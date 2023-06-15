@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+jwt:
+  issuer: ceo@pinkspider.io
+  secret_key: $2a$10$OtABGVEcH6BeGKDRfg9TmeJ/A/58VC8IHvTEmsl88V6rk35pJKnpy
